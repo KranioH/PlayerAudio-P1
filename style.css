@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #140d23;
+}
+
+.container {
+    width: 1100px;
+    height: 500px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    display: flex;
+}
+
+.area-cover {
+    width: 350px;
+    height: 100%;
+    background-color: #d1d1d1;
+    background-image: url("/assets/1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.area-play {
+    width: 750px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(121, 161, 121);
+}
+
+
+/* ------       EDIT HEADER TEXT        ----- */
+.play-top {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* -------          EDIT LIST AREA      ------- */
+.play-list {
+    background-color: yellow;
+    width: 100%;
+}
+
+.play-list-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-item-nameicon {
+    display: flex;
+    align-items: center;
+}
+
+/* -------      EDIT AREA PLAY FUNCTIONS        ------- */
+.area-play-function {
+    width: 100%;
+    height: 100px;
+    background-color: pink;
+}
+
+.play-function-progress {
+    width: 100%;
+    height: 10px;
+    background-color: gray;
+}
+.play-function-bar {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 0 5px 5px 0;
+}
+
+.play-function {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    height: 90px;
+}
+
+.playing {
+    background-color: red;
+    width: 30%;
+}
+
+.playing-text {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.play-function-bnt {
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+    width: 39.6%;
+}
+
+.play-function-bnt i {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-function-duraction {
+    background-color: purple;
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
