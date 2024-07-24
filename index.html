@@ -6,27 +6,63 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script defer src="/js/infos.js"></script>
+    <script defer src="/js/cover.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="area-cover"></div>
+        <div class="area-cover">
+            <div class="cover-info">
+                <p id="cover-title"></p>
+                <div class="cover-text">
+                    <span id="cover-text-album"></span>
+                    <h1 id="cover-text-title"></h1>
+                </div>
+                <p id="cover-data"></p>
+            </div>
+        </div>
+
         <div class="area-play">
             <div class="play-top">
                 <div class="play-top-text">
-                    <span>My Life Album</span>
-                    <h1>Current Music Playing</h1>
+                    <span id="play-top-album">A Praia</span>
+                    <h2 id="play-top-title">De Passagem</h1>
                 </div>
-                <button>Buy on (Algum lugar)</button>
+                <button id="play-top-bnt">
+                    <i class='bx bxs-bowling-ball'></i>
+                    Buy on (store)
+                </button>
             </div>
 
             <div class="play-list">
+                <div class="play-list-item current-item">
+                    <div class="list-item-nameicon">
+                        <i class="bx bx-play"></i>
+                        <p class="play-list-title"></p>
+                    </div>
+                    <div class="list-item-end">
+                        <p class="duraction-total">0:00</p>
+                    </div>
+                </div>
+
                 <div class="play-list-item">
                     <div class="list-item-nameicon">
                         <i class="bx bx-play"></i>
-                        <p>Music Name</p>
+                        <p class="play-list-title"></p>
                     </div>
                     <div class="list-item-end">
-                        <p>0:00</p>
+                        <p class="duraction-total">0:00</p>
+                    </div>
+                </div>
+
+                <div class="play-list-item">
+                    <div class="list-item-nameicon">
+                        <i class="bx bx-play"></i>
+                        <p class="play-list-title"></p>
+                    </div>
+                    <div class="list-item-end">
+                        <p class="duraction-total">0:00</p>
                     </div>
                 </div>
             </div>
@@ -38,15 +74,15 @@
                 <div class="play-function">
                     <div class="playing">
                         <span class="playing-text">Playing</span>
-                        <h3>Music title</h3>
+                        <p class="playing-title">De Passagem</p>
                     </div>
     
                     <div class="play-function-bnt">
-                        <i class="bx bx-repeat"></i>
-                        <i class='bx bx-skip-previous'></i>
-                        <i class="bx bx-play"></i>
-                        <i class='bx bx-skip-next'></i>
-                        <i class='bx bx-shuffle'></i>
+                        <button id="bntRepeat"><i class="bx bx-repeat"></i></button>
+                        <button id="bntPrev"><i class="bx bx-skip-previous"></i></button>
+                        <button id="bntPlay"><i class="bx bx-play" onclick="init()"></i></button>
+                        <button id="bntNext"><i class="bx bx-skip-next"></i></button>
+                        <button id="bntShuffle"><i class="bx bx-shuffle"></i></button>                       
                     </div>
     
                     <div class="play-function-duraction">

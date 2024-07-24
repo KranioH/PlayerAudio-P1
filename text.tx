@@ -1,0 +1,15 @@
+// songs.forEach((item, loc) => {
+    //     let itemMusic = document.createElement("div");
+    //     itemMusic.setAttribute("class", "play-list-item")
+    //     itemMusic.innerHTML = 
+    //     `
+    //     <div class="list-item-nameicon" id="${songs[loc].id}">
+    //         <i class="bx bx-play"></i>
+    //         <p class="play-list-title">${songs[loc].musicName}</p>
+    //     </div>
+    //     <div class="list-item-end">
+    //         <p class="duraction-total">0:00</p>
+    //     </div>
+    //     `
+    //     playList.appendChild(itemMusic);
+    // })
