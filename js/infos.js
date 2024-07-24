@@ -2,9 +2,9 @@ const songs = [
     {
         artist: "Cícero",
         id: 0,
-        color: "",
         musicName: "De Passagem",
-        cover: "./assets/image/1.jpg",
+        cover: "./assets/image/1-cover.png",
+        background: "./assets/image/1.jpg",
         file: "/assets/audio/dePassagem.mp3",
         album: "A praia",
         data: "Mar.2015",
@@ -40,9 +40,9 @@ const songs = [
     {
         artist: "Rubel",
         id: 1,
-        color: "",
         musicName: "Grão De Areia",
         cover: "./assets/image/2-cover-2.jpg",
+        background: "./assets/image/2.jpg",
         file: "./assets/audio/graodeAreia.mp3",
         album: "AS PALAVRAS, VOL. 1 & 2",
         data: "Mar.2023",
@@ -103,9 +103,9 @@ const songs = [
     {
         artist: "Zimbra",
         id: 2,
-        color: "",
         musicName: "Já Sei",
         cover: "./assets/image/3-cover-2.jpg",
+        background: "./assets/image/3.webp",
         file: "./assets/audio/jaSei.mp3",
         album: "Estúdio Showlivre, Vol. 2",
         data: "Jul.2015",
