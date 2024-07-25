@@ -137,4 +137,58 @@ const songs = [
                 Eu só não admito
         `
     },
+    {
+        artist: "Selvagens à Procura de Lei",
+        id: 2,
+        musicName: "Despedida",
+        cover: "./assets/image/4-cover.jpg",
+        background: "./assets/image/4.jpg",
+        file: "./assets/audio/selvagens.mp3",
+        album: "Selvagens à Procura de Lei Talvez eu Seja Mesmo Calado, mas eu sei Exatamente o que eu Quero",
+        data: "Jul.2015",
+        lyric: `Tentei falar, mas você não entendeu
+                Voltei pra casa, te liguei não atendeu
+                
+                Eu me entrego à cidade
+                Vou atrás de você
+                Algumas coisas não mudam
+                Mas como posso saber
+                Quero tirar essa dúvida
+                
+                Eu me dei conta de mim mesmo
+                E quando vejo sua foto parece que você tá falando comigo
+                Agora eu tô no prejuízo
+                Bem que eu queria te ver
+                Mas não posso
+                Porque meus olhos estão encharcados
+                Eu não consigo te ver
+                Por enquanto
+                
+                Eu não queria partir
+                Mas você me convenceu
+                
+                Eu não queria partir...
+                
+                Só não quero que você
+                Me mantenha hipnotizado
+                Duvido de tudo que segue pelo o que é mais fácil
+                Eu me entrego a você
+                Como uma cidade derruba os muros
+                Mostrando a realidade da nossa dupla solidão
+                
+                Eu me dei conta de mim mesmo
+                E quando vejo sua foto parece que você tá falando comigo
+                Quem vai carregar esse crucifixo?
+                Bem que eu queria te ver
+                Mas não posso
+                Porque meus olhos estão encharcados
+                Eu não consigo te ver
+                Pelo menos por enquanto
+                
+                Eu não queria partir
+                Mas você me convenceu...
+                
+                Eu não queria partir.
+        `
+    },
 ];

@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <script defer src="/js/infos.js"></script>
-    <script defer src="/js/cover.js"></script>
+    <script defer src="/js/app.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="area-cover">
             <div class="cover-info">
-                <p id="cover-title"></p>
+                <span id="cover-text-album"></span>
                 <div class="cover-text">
-                    <span id="cover-text-album"></span>
+                    <p id="cover-title"></p>
                     <h1 id="cover-text-title"></h1>
                 </div>
                 <p id="cover-data"></p>
+                
             </div>
+            <i class="bx bx-volume-full" id="cover-volume"></i>
         </div>
 
         <div class="area-play">
@@ -30,65 +33,88 @@
                     <h2 id="play-top-title">De Passagem</h1>
                 </div>
                 <button id="play-top-bnt">
-                    <i class='bx bxs-bowling-ball'></i>
-                    Buy on (store)
+                    <i class='bx bxs-book-alt'></i>
+                    Lyric
                 </button>
             </div>
 
-            <div class="play-list">
-                <div class="play-list-item current-item">
-                    <div class="list-item-nameicon">
-                        <i class="bx bx-play"></i>
-                        <p class="play-list-title"></p>
+            <div class="area-play-list">
+                <div class="play-list">
+                    <div class="play-list-item current-item">
+                        <div class="list-item-nameicon">
+                            <i class="bx bx-play"></i>
+                            <p class="play-list-title"></p>
+                        </div>
+                        <div class="list-item-end">
+                            <p class="duraction-total">03:16</p>
+                        </div>
                     </div>
-                    <div class="list-item-end">
-                        <p class="duraction-total">03:16</p>
+    
+                    <div class="play-list-item">
+                        <div class="list-item-nameicon">
+                            <i class="bx bx-play"></i>
+                            <p class="play-list-title"></p>
+                        </div>
+                        <div class="list-item-end">
+                            <p class="duraction-total">3:43</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="play-list-item">
-                    <div class="list-item-nameicon">
-                        <i class="bx bx-play"></i>
-                        <p class="play-list-title"></p>
+    
+                    <div class="play-list-item">
+                        <div class="list-item-nameicon">
+                            <i class="bx bx-play"></i>
+                            <p class="play-list-title"></p>
+                        </div>
+                        <div class="list-item-end">
+                            <p class="duraction-total">3:55</p>
+                        </div>
                     </div>
-                    <div class="list-item-end">
-                        <p class="duraction-total">3:43</p>
-                    </div>
-                </div>
-
-                <div class="play-list-item">
-                    <div class="list-item-nameicon">
-                        <i class="bx bx-play"></i>
-                        <p class="play-list-title"></p>
-                    </div>
-                    <div class="list-item-end">
-                        <p class="duraction-total">3:55</p>
+    
+                    <div class="play-list-item">
+                        <div class="list-item-nameicon">
+                            <i class="bx bx-play"></i>
+                            <p class="play-list-title"></p>
+                        </div>
+                        <div class="list-item-end">
+                            <p class="duraction-total">4:23</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="area-play-function">
-                <div class="play-function-progress">
-                    <div id="play-function-bar"></div>
+                <div id="play-function-progress">
+                    <div id="play-function-bar">
+                        <div class="ponto">
+                            <div class="ponto-centro"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="play-function">
                     <div class="playing">
-                        <span class="playing-function-text">Playing</span>
-                        <p class="playing-function-title">De Passagem</p>
+                        <div class="playing-p">
+                            <span class="playing-function-text">Playing</span>
+                            <p class="playing-function-title">De Passagem</p>
+                        </div>
                     </div>
     
                     <div class="play-function-bnt">
-                        <!-- <button id="bntRepeat"><i class="bx bx-repeat"></i></button> -->
+                        <button id="bntRepeat"><i class="bx bx-repeat"></i></button>
                         <button id="bntPrev"><i class="bx bx-skip-previous"></i></button>
                         <button id="bntPlay"><i class="bx bx-play"></i></button>
                         <button id="bntNext"><i class="bx bx-skip-next"></i></button>
-                        <!-- <button id="bntShuffle"><i class="bx bx-shuffle"></i></button>                        -->
+                        <button id="bntShuffle"><i class="bx bx-shuffle"></i></button>                       
                     </div>
     
                     <div class="play-function-duraction">
                         <span id="duraction-current">00:00</span>
                         <p>/</p>
                         <span id="duraction-total">00:00</span>
+
+                        <button id="bnt-volume"><i class='bx bx-volume-full'></i></button>
+                        <div class="area-volume">
+                            <input id="bar-volume" type="range" min="0" max="100">
+                        </div>
                     </div>
                 </div>
             </div>
