@@ -46,7 +46,7 @@
 
     .playing {
         width: 100%;
-        height: 50%;
+        height: 70%;
         padding: 0 5%;
         display: flex;
         flex-direction: row;
@@ -59,7 +59,7 @@
         height: 100%;
     
         flex-direction: column;
-        justify-content: center;
+        justify-content: end;
     }
 
     .playing-duraction {
@@ -76,6 +76,22 @@
     }
 
     .play-function-duraction {
-        display: none;
+        display: flex;
+        justify-content: space-between;
+        height: 20px;
+        width: 100%;
+        font-size: 14px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        padding: 0 5%;
+    }
+
+    #bnt-volume {
+        position: absolute;
+        right: -15px;
+        font-size: 15px;
+        top: 25px;
+        transform: translate(-50%);
     }
 }
