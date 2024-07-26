@@ -1,5 +1,6 @@
 //      COVER REFERENCE
 const cover = document.querySelector(".area-cover");
+const playListArea = document.querySelector(".area-play-list");
 const background = document.querySelector(".area-play");
 const coverAlbum = document.querySelector("#cover-text-album");
 const coverTextTitle = document.querySelector("#cover-text-title");
@@ -35,6 +36,9 @@ const bntVolume = document.querySelector("#bnt-volume");
 const coverVolume = document.querySelector("#cover-volume");
 const barVolume = document.querySelector("#bar-volume")
 
+//
+const bntList = document.querySelector("#bntList");
+
 
 //
 const musicTimeClass = document.querySelectorAll(".duraction-total")
@@ -45,7 +49,7 @@ const musicTimeCurrent = document.querySelector("#duraction-current")
 //      FUNCTIONS   
 function loadSong(song) {
     cover.style.backgroundImage = `url("${song.cover}")`;
-    background.style.backgroundImage = `linear-gradient(to left, #131a35f0, #131a35f0), url("${song.background}")`;
+    // background.style.backgroundImage = `linear-gradient(to left, #131a35f0, #131a35f0), url("${song.background}")`;
     coverTitle.textContent = song.artist
     coverAlbum.textContent = song.album;
     coverTextTitle.textContent = song.musicName;
@@ -113,13 +117,11 @@ function clickProgressBar(e) {
     music.currentTime = (clickX / width) * music.duration;
 }
 
-function openLyric() {
-    if (areaLyric.classList.contains("open")) {
-        areaLyric.classList.remove("open")
-        playTopBnt.innerHTML = '<i class="bx bxs-book-alt"></i>Lyric'
+function openList() {
+    if (playListArea.classList.contains("openlist")) {
+        playListArea.classList.remove("openlist")
     } else {
-        areaLyric.classList.add("open");
-        playTopBnt.innerHTML = '<i class="bx bxs-book-open"></i>Lyric'
+        playListArea.classList.add("openlist");
     }
 }
 
@@ -157,6 +159,10 @@ playListItem.forEach((item, loc)=> {
 loadSong(songs[indexMus])
 loadPlayList();
 
+
+
+//      EVENT LISTENER
+
 bntPlay.addEventListener("click", init);
 music.addEventListener("timeupdate", progressBar);
 music.addEventListener("ended", ()=> changeMusic(1));
@@ -164,3 +170,10 @@ bntPrev.addEventListener("click", ()=> changeMusic(-1));
 bntNext.addEventListener("click", ()=> changeMusic(1));
 progress.addEventListener("click", clickProgressBar);
 bntVolume.addEventListener("click", clickVolume);
+bntList.addEventListener("click", openList);
+
+playListArea.addEventListener("click", (e)=>{
+    let item = e.target.classList.contains("openlist");
+    setTimeout(5000)
+    if (item) playListArea.classList.remove("openlist")
+})

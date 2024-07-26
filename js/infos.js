@@ -144,7 +144,7 @@ const songs = [
         cover: "./assets/image/4-cover.jpg",
         background: "./assets/image/4.jpg",
         file: "./assets/audio/selvagens.mp3",
-        album: "Selvagens à Procura de Lei Talvez eu Seja Mesmo Calado, mas eu sei Exatamente o que eu Quero",
+        album: "Talvez eu Seja Mesmo Calado, mas eu sei Exatamente o que eu Quero",
         data: "Jul.2015",
         lyric: `Tentei falar, mas você não entendeu
                 Voltei pra casa, te liguei não atendeu

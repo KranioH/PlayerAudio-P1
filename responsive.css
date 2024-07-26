@@ -7,24 +7,23 @@
     .container {
         display: flex;
         flex-direction: column;
-        border: 2px solid #fff;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .area-play-function {
-        width: 100%;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        width: 400px;
+        height: 600px;
+        position: relative;
+        overflow: hidden;
     }
 
     .area-cover {
         width: 100%;
-        height: 60%;
-        
+        overflow: hidden;
     }
 
     .area-play {
         width: 100%;
         height: 50%;
+        display: flex;
     }
 
     .play-top {
@@ -32,7 +31,30 @@
     }
 
     .area-play-list {
+        width: 100%;
+        display: flex;
+        bottom: 0;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 100;
         display: none;
+        background-color: #0000008b;
+        transition: all .4s;
+    }
+
+    .play-list {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        padding: 10px 0px;
+        border-radius: 15px;
+        background-color: #12124d;
+        z-index: 150;
+        width: 100%;
+        height: 50%;
+        font-size: 10px;
+        animation: openlist .4s linear;
     }
 
     .play-function {
@@ -46,33 +68,28 @@
 
     .playing {
         width: 100%;
-        height: 70%;
+        height: 40%;
         padding: 0 5%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        position: relative;
     }
 
     .playing-p {
         display: flex;
-        width: 100%;
-        height: 100%;
-    
+        width: 250px;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 50;
+        position: absolute;
         flex-direction: column;
         justify-content: end;
-    }
-
-    .playing-duraction {
-        display: flex;
-        height: 100%;
-        align-items: center;
-        gap: 5px;
-        color: #cccbcb;
+        background-color: #131a35;
     }
 
     .play-function-bnt {
         width: 100%;
-        height: 50%;
+        height: 40%;
     }
 
     .play-function-duraction {
@@ -86,12 +103,14 @@
         top: 10px;
         padding: 0 5%;
     }
+}
 
-    #bnt-volume {
-        position: absolute;
-        right: -15px;
-        font-size: 15px;
-        top: 25px;
-        transform: translate(-50%);
-    }
+.openlist {
+    display: flex;
+    transition: all .4s;
+}
+
+@keyframes openlist {
+    from {height: 0;}
+    to{height: 300px;}
 }

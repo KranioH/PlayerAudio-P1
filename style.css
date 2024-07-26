@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    width: 900px;
+    width: 1100px;
     height: 500px;
     box-shadow: 2px 5px 10px #0606065f;
     margin: 0 auto;
@@ -28,7 +28,7 @@ body {
 
 /* ============       EDIT AREA COVER         ========== */
 .area-cover {
-    width: 350px;
+    width: 450px;
     height: 100%;
     background-color: #d1d1d1;
     background-size: cover;
@@ -89,7 +89,7 @@ body {
 
 /* =========            EDIT AREA PLAY          ============ */
 .area-play {
-    width: 550px;
+    width: 650px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -98,6 +98,7 @@ body {
     background-position: center;
     color: #131a35;
     overflow: hidden;
+    background-color: #131a35;
 }
 
 
@@ -121,8 +122,10 @@ body {
 
 .play-top-text #play-top-album {
     color: #e2015f;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
+    line-height: 1;
+    height: 10px;
     text-transform: uppercase;
 }
 
@@ -271,12 +274,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5%;
+    padding: 0 2%;
     height: 90px;
 }
 
 .playing {
-    width: 30%;
+    width: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -308,7 +311,7 @@ body {
     align-items: center;
     gap: 5px;
     justify-content: center;
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 
@@ -334,7 +337,9 @@ body {
 #bntPrev,
 #bntNext,
 #bntShuffle,
-#bntRepeat {
+#bntRepeat,
+#bntList,
+#bnt-volume {
     border: 1px;
     background-color: transparent;
     transition: .4s;
@@ -351,7 +356,9 @@ body {
 #bntPrev:hover,
 #bntNext:hover,
 #bntShuffle:hover,
-#bntRepeat:hover {
+#bntRepeat:hover,
+#bntList:hover,
+#bnt-volume:hover {
     cursor: pointer;
     background-color: #871fb7;
     border-radius: 50%;
@@ -359,7 +366,7 @@ body {
 }
 
 .play-function-duraction {
-    width: 30%;
+    width: 25%;
     height: 100%;
     display: flex;
     gap: 5px;
@@ -370,25 +377,10 @@ body {
     font-size: 12px;
     position: relative;
 }
+
 #duraction-current,
 #duraction-total {
     color: #aeacac;
-}
-
-#bnt-volume {
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: 1px;
-    color: #fff;
-    border-radius: 20%;
-    cursor: pointer;
-    transition: .4s;
-}
-#bnt-volume:hover {
-    background-color: #871fb7;
-    border-radius: 50%;
-    animation: back 4s infinite;
 }
 
 .area-volume {
@@ -413,6 +405,7 @@ body {
     background-color: #0363c3;
     position: relative;
 }
+
 .ponto-volume {
     position: absolute;
     left: -2.5px;
